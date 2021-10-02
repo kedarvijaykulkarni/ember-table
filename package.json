@@ -66,5 +66,10 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^10.0.1",
+    "sass": "^1.42.1",
+    "tachyons-sass": "github:kedarvijaykulkarni/tachyons-sass#fix/deprecation-warning-with-dart-sass"
   }
 }
