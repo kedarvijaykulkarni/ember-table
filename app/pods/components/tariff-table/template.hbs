@@ -1,0 +1,24 @@
+<table colspan="0" rowspan="0" border="1">
+  <thead>
+    <th>&nbsp;</th>
+    <th>Valid From</th>
+    <th>Expires</th>
+    <th>Type</th>
+    <th>schedules</th>
+    <th>Supplier</th>
+    <th>Changes</th>
+  </thead>
+  <tbody>
+    {{#each @tariffs as |tariff|}}
+      <tr>
+        <td>{{tariff.select}}</td>
+        <td>{{tariff.validFrom}}</td>
+        <td>{{tariff.expires}}</td>
+        <td>{{tariff.type}}</td>
+        <td>{{tariff.schedulesCount}}</td>
+        <td>{{tariff.supplierCode}}</td>
+        <td>&nbsp;</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -6,4 +6,9 @@ export default class TariffModel extends Model {
   @attr type;
   @attr schedulesCount;
   @attr supplierCode;
+  @attr('boolean', { defaultValue: false }) select;
+
+  get canDelete() {
+    return this.schedulesCount <= 0;
+  }
 }
